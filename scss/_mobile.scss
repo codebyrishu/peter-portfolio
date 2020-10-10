@@ -4,6 +4,7 @@
     position: relative;
 
     .header {
+      
       .burger {
         display: block;
         cursor: pointer;
@@ -55,13 +56,13 @@
     .hero {
       width: 100%;
       margin-bottom: 2em;
-
       .hero-images {
-        margin-right: 1.5em;
+        
        
         .img-left {
           width: 100%;
           height: 100%;
+          margin-right: 0;
         }
         .img-reight {
           display: none;
@@ -69,4 +70,14 @@
       }
     }
   }
+
+  .container {
+    .gallery {
+      column-count: 1;
+      width: 100%;
+      margin: 0;
+     
+    }
+  }
 }
+
