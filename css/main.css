@@ -4,10 +4,15 @@
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
 }
 
@@ -306,6 +311,74 @@ img {
   font-weight: 600;
 }
 
+.hero-container .hero {
+  width: 90%;
+  margin: auto;
+  max-width: 1440px;
+  height: 85vh;
+  max-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-container .hero .scroll {
+  height: 100%;
+  width: 5em;
+  position: relative;
+}
+
+.hero-container .hero .scroll .scroll-line-container {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-container .hero .scroll .scroll-line-container .scroll-line {
+  width: 1px;
+  height: 70%;
+  background-color: #222222;
+}
+
+.hero-container .hero .scroll .scroll-text {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-align: center;
+}
+
+.hero-container .hero .hero-images {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-container .hero .hero-images .img-left {
+  background: url(../images/photos/hero-left.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+}
+
+.hero-container .hero .hero-images .img-reight {
+  background: url(../images/photos/hero-right.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 60%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
@@ -366,5 +439,15 @@ img {
     text-align: left;
     font-size: 1.2em;
     padding: 1.5em;
+  }
+  .hero-container .hero {
+    width: 100%;
+  }
+  .hero-container .hero .hero-images .img-left {
+    width: 100%;
+    height: 100%;
+  }
+  .hero-container .hero .hero-images .img-reight {
+    display: none;
   }
 }

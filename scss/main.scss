@@ -88,4 +88,73 @@ img {
     }
   }
 }
+
+
+
+
+.hero-container {
+  .hero {
+    width: 90%;
+    margin: auto;
+    max-width: 1440px;
+    height: 85vh;
+    max-height: 600px;
+       display: flex;
+    .scroll{
+      height: 100%;
+      width: 5em;
+      position: relative;
+      .scroll-line-container {
+        width: 100%;
+        height: 90%;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .scroll-line{
+          width: 1px;
+          height: 70%;
+          background-color: #222222;
+
+        }
+      }
+
+      
+        
+        .scroll-text{
+          
+          transform: rotate(90deg);
+          text-align: center;
+        
+      }
+
+
+      
+     
+    }
+    .hero-images {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      
+      .img-left {
+        background: url(../images/photos/hero-left.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40%;
+        height: 100%;
+      }
+      .img-reight {
+        background: url(../images/photos/hero-right.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        height: 100%;
+        width: 60%;
+        height: 100%;
+      }
+    }
+  }
+
+}
 @import "mobile";
