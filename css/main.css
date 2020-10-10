@@ -473,4 +473,7 @@ img {
     width: 100%;
     margin: 0;
   }
+  .container .gallery .gallery-image {
+    padding-bottom: 2em;
+  }
 }
