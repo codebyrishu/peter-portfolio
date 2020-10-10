@@ -366,6 +366,7 @@ img {
   background: url(../images/photos/hero-left.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 40%;
   height: 100%;
 }
@@ -442,6 +443,10 @@ img {
   }
   .hero-container .hero {
     width: 100%;
+    margin-bottom: 2em;
+  }
+  .hero-container .hero .hero-images {
+    margin-right: 1.5em;
   }
   .hero-container .hero .hero-images .img-left {
     width: 100%;
