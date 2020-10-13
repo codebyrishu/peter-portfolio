@@ -12,6 +12,7 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  color: #222222;
 }
 
 ::-webkit-input-placeholder {
@@ -48,6 +49,11 @@ a {
 }
 
 a:hover {
+  color: #222222;
+}
+
+.no-border {
+  border-bottom: none;
   color: #222222;
 }
 
@@ -177,6 +183,9 @@ a:hover {
     position: absolute;
     top: .5em;
     right: 1em;
+  }
+  .container .contact-header .close a {
+    border: 2px solid red;
   }
   .container .contact-header a {
     width: -webkit-max-content;
