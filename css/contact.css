@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+::-webkit-input-placeholder {
+  color: #c0c0c0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+:-ms-input-placeholder {
+  color: #c0c0c0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+::-ms-input-placeholder {
+  color: #c0c0c0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: #c0c0c0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #7c7c7c;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+  border-bottom: 3px solid #222222;
+}
+
+a:hover {
+  color: #222222;
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container .contact-header {
+  width: 100%;
+  font-size: 1.2rem;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .contact-header .close {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.container .contact-form {
+  width: 90%;
+  height: 75vh;
+  max-height: 30em;
+  margin: 0 auto;
+  max-height: 40em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .contact-form .contact-form-wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.container .contact-form .contact-form-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em 0em;
+}
+
+.container .contact-form .contact-form-wrapper .row .lable {
+  width: 10em;
+}
+
+.container .contact-form .contact-form-wrapper .row .input-field input {
+  border: none;
+  background-color: #f5f5f5;
+  padding: 1em;
+  width: 25em;
+  border-radius: 0.2em;
+}
+
+.container .contact-form .contact-form-wrapper .row .input-field textarea {
+  border: none;
+  background-color: #f5f5f5;
+  padding: 1em;
+  width: 25em;
+  border-radius: 0.2em;
+}
+
+.container .contact-form .contact-form-wrapper .row .input-field .cta-send {
+  margin-top: 2em;
+  font-size: 1.1em;
+  width: 10em;
+  background-color: #222222;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.2em;
+  padding: 0.6em;
+}
+
+@media only screen and (max-width: 725px) {
+  .container {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .contact-header {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .container .contact-header .mail, .container .contact-header .instagram {
+    margin-bottom: 2em;
+    width: 100%;
+  }
+  .container .contact-header .close {
+    position: absolute;
+    top: .5em;
+    right: 1em;
+  }
+  .container .contact-header a {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .container .contact-form {
+    margin-top: 3em;
+    display: block;
+  }
+  .container .contact-form .contact-form-wrapper {
+    width: 90%;
+  }
+  .container .contact-form .contact-form-wrapper .row {
+    display: block;
+  }
+  .container .contact-form .contact-form-wrapper .row .lable {
+    padding-bottom: .7em;
+    width: 100%;
+  }
+  .container .contact-form .contact-form-wrapper .row .input-field input {
+    width: 100%;
+  }
+  .container .contact-form .contact-form-wrapper .row .input-field textarea {
+    width: 100%;
+  }
+}
